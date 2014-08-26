@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-sdoc"
+VERSION=0.4.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby RDoc HTML generator"
+DESCRIPTION="RDoc HTML generator with javascript search index."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_sdoc_CONTENTS="usr/bin/sdoc* ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_sdoc_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
