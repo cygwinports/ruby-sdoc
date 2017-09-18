@@ -1,11 +1,13 @@
 inherit rubygem
 
 NAME="ruby-sdoc"
-VERSION=0.4.1
+VERSION=0.4.2
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby RDoc HTML generator"
 DESCRIPTION="RDoc HTML generator with javascript search index."
+
+PATCH_URI="0.4.2-deps.patch"
 
 ARCH=noarch
 

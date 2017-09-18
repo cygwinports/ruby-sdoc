@@ -1,0 +1,24 @@
+--- origsrc/sdoc-0.4.2/sdoc.gemspec	2017-09-18 15:07:38.708445900 -0500
++++ src/sdoc-0.4.2/sdoc.gemspec	2017-09-18 15:09:01.985343100 -0500
+@@ -24,15 +24,15 @@ Gem::Specification.new do |s|
+     s.specification_version = 4
+ 
+     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+-      s.add_runtime_dependency(%q<rdoc>.freeze, ["~> 4.0"])
+-      s.add_runtime_dependency(%q<json>.freeze, [">= 1.7.7", "~> 1.7"])
++      s.add_runtime_dependency(%q<rdoc>.freeze, [">= 4.0", "< 6.0"])
++      s.add_runtime_dependency(%q<json>.freeze, [">= 1.7.7"])
+     else
+-      s.add_dependency(%q<rdoc>.freeze, ["~> 4.0"])
+-      s.add_dependency(%q<json>.freeze, [">= 1.7.7", "~> 1.7"])
++      s.add_dependency(%q<rdoc>.freeze, [">= 4.0", "< 6.0"])
++      s.add_dependency(%q<json>.freeze, [">= 1.7.7"])
+     end
+   else
+-    s.add_dependency(%q<rdoc>.freeze, ["~> 4.0"])
+-    s.add_dependency(%q<json>.freeze, [">= 1.7.7", "~> 1.7"])
++    s.add_dependency(%q<rdoc>.freeze, [">= 4.0", "< 6.0"])
++    s.add_dependency(%q<json>.freeze, [">= 1.7.7"])
+   end
+ end
+ 
